@@ -8,4 +8,10 @@ class DogTest < Minitest::Test
 
     assert_instance_of Dog, fido
   end
+
+  def test_it_has_an_age
+    fido = Dog.new("Fido", 2, "Dalmation")
+
+    assert_equal 2, fido.age
+  end
 end
