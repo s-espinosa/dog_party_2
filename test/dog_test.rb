@@ -14,4 +14,9 @@ class DogTest < Minitest::Test
 
     assert_equal 2, fido.age
   end
+
+  def test_it_has_a_name
+    fido = Dog.new("Fido", 2, "Dalmation")
+    assert_equal "Fido", fido.name
+  end
 end
